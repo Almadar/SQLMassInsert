@@ -1,33 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\repositories\\git\\github\\personal\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj": {}
+    "Y:\\Emmanuel\\GitHub\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj": {}
   },
   "projects": {
-    "E:\\repositories\\git\\github\\personal\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj": {
+    "Y:\\Emmanuel\\GitHub\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\repositories\\git\\github\\personal\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj",
+        "projectUniqueName": "Y:\\Emmanuel\\GitHub\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj",
         "projectName": "Inserter.BusinessLogic",
-        "projectPath": "E:\\repositories\\git\\github\\personal\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\xk3_u\\.nuget\\packages\\",
-        "outputPath": "E:\\repositories\\git\\github\\personal\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\obj\\",
+        "projectPath": "Y:\\Emmanuel\\GitHub\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\Inserter.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\emmanuelmedina\\.nuget\\packages\\",
+        "outputPath": "Y:\\Emmanuel\\GitHub\\Inserter\\src\\Inserter\\Inserter.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\xk3_u\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\emmanuelmedina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dsi.myget.org/F/dev/auth/924f9977-b76b-41c4-9692-e4d7a1df944a/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -71,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
