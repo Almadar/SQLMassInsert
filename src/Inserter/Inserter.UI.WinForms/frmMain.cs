@@ -9,5 +9,15 @@ namespace Inserter.UI.WinForms
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            SetInitialControlStatus();
+        }
+
+        private void SetInitialControlStatus()
+        { 
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Inserter.Logic.Database
+﻿namespace Inserter.Logic
 {
     public static class Constants
     {

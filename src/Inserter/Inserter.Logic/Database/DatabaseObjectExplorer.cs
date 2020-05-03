@@ -13,8 +13,6 @@ namespace Inserter.Logic.Database
         public List<string> DatabaseList { get; set; }
         public List<string> TableList { get; set; }
         public List<string> ColumnList { get; set; }
-        public List<string> ViewList { get; set; }
-        public List<string> StoredProcedureList { get; set; }
         
         private string connectionString;
         private SqlConnection connection;           
@@ -48,25 +46,75 @@ namespace Inserter.Logic.Database
             DatabaseList = new List<string>();
             TableList = new List<string>();
             ColumnList = new List<string>();
-            ViewList = new List<string>();
-            StoredProcedureList = new List<string>();
         }
 
         public List<string> GetAllDatabaseNames()
         {
-            var databases = new List<string>();
-
             try
             {
                 connection.Open();
+                var cmd = new SqlCommand(Constants.QUERY_ALL_DATABASES);
+                var results = cmd.ExecuteReader();
                 connection.Close();
+                DatabaseList = GetListFromDataReader(results);
             }
             catch
             {
                 throw;
             }
 
-            return databases;
+            return DatabaseList; ;
+        }
+
+        public List<string> GetTableNamesFromCurrentDatabase()
+        {
+            try
+            {
+                connection.Open();
+                var cmd = new SqlCommand(Constants.QUERY_ALL_TABLES);
+                var results = cmd.ExecuteReader();
+                connection.Close();
+                TableList = GetListFromDataReader(results);
+            }
+            catch
+            {
+                throw;
+            }
+
+            return TableList;
+        }
+
+        public List<string> GetColumnsFromTable(string tableName)
+        {
+            try
+            {
+                connection.Open();
+                var cmd = new SqlCommand(string.Format(Constants.QUERY_ALL_COLUMNS, tableName));
+                var results = cmd.ExecuteReader();
+                connection.Close();
+                ColumnList = GetListFromDataReader(results);
+            }
+            catch
+            {
+                throw;
+            }
+
+            return ColumnList;
+        }
+
+        private List<string> GetListFromDataReader(SqlDataReader source)
+        {
+            var results = new List<string>();
+
+            if (source.HasRows)
+            {
+                while (source.Read())
+                {
+                    results.Add(source[0].ToString());
+                }
+            }
+
+            return results;
         }
     }
 }
