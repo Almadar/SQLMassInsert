@@ -34,24 +34,19 @@ namespace Inserter.UI.WinForms
 
         private void LoadData()
         {
-            var configurations = configFile.GetAllConfigurations();
+            var serverList = configFile.GetAllServers();
 
-            if (configurations.Length == 0)
-            {
-                grpConnectionSettings.Enabled = false;
-                grpGeneralControls.Enabled = true;
-                txtNewServerName.Focus();
-            }
-            else
-            {
-                var serverList = new List<string>();
-                var databaseList = new List<string>();
+            cboServer.DataSource = serverList;
+            cboServer.SelectedIndex = 0;
 
-                foreach (string config in configurations)
-                {
-                    var elements = config.Split(',');
-                }
-            }
+            string server = (string)cboServer.SelectedItem;
+            string alias = server.Substring(0, server.IndexOf(' '));
+            string name = server.Substring(server.IndexOf('-') + 2);
+
+            var databaseList = configFile.GetAllDatabasesInServer(alias, name);
+
+            cboDatabase.DataSource = databaseList;
+            cboDatabase.SelectedIndex = 0;
         }
     }
 }
