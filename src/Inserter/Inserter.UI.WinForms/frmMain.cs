@@ -36,17 +36,26 @@ namespace Inserter.UI.WinForms
         {
             var serverList = configFile.GetAllServers();
 
-            cboServer.DataSource = serverList;
-            cboServer.SelectedIndex = 0;
+            if (serverList.Count > 0)
+            {
+                cboServer.DataSource = serverList;
+                cboServer.SelectedIndex = 0;
 
-            string server = (string)cboServer.SelectedItem;
-            string alias = server.Substring(0, server.IndexOf(' '));
-            string name = server.Substring(server.IndexOf('-') + 2);
+                string server = (string)cboServer.SelectedItem;
+                string alias = server.Substring(0, server.IndexOf(' '));
+                string name = server.Substring(server.IndexOf('-') + 2);
 
-            var databaseList = configFile.GetAllDatabasesInServer(alias, name);
+                var databaseList = configFile.GetAllDatabasesInServer(alias, name);
 
-            cboDatabase.DataSource = databaseList;
-            cboDatabase.SelectedIndex = 0;
+                cboDatabase.DataSource = databaseList;
+                cboDatabase.SelectedIndex = 0;
+            }
+            else 
+            {
+                grpConnectionSettings.Enabled = false;
+                grpGeneralControls.Enabled = true;
+                txtNewServerName.Focus();
+            }
         }
     }
 }
