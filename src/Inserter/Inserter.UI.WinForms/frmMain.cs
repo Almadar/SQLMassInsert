@@ -17,7 +17,7 @@ namespace Inserter.UI.WinForms
             InitializeComponent();
             string exePath = Application.ExecutablePath;
             string appPath = exePath.Substring(0, exePath.LastIndexOf(@"\") + 1);
-            configFile = new ConfigFileHandler(appPath + Constants.CONNECTION_CONFIGURATION_FILE_NAME);
+            configFile = new ConfigFileHandler(appPath + Constants.CONNECTION_CONFIGURATION_FILE_NAME);            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -56,6 +56,71 @@ namespace Inserter.UI.WinForms
                 grpGeneralControls.Enabled = true;
                 txtNewServerName.Focus();
             }
+        }
+
+        private void CleanupGroupbox(GroupBox container)
+        {
+            foreach (Control c in container.Controls)
+            {
+                if (c is TextBox)
+                {
+                    var control = c as TextBox;
+                    control.Text = string.Empty;
+                }
+                else if (c is ComboBox)
+                {
+                    var control = c as ComboBox;
+                    control.SelectedIndex = -1;
+                }
+                else if (c is CheckBox)
+                {
+                    var control = c as CheckBox;
+                    control.Checked = false;
+                }
+            }
+        }
+
+        private void btnNewServer_Click(object sender, EventArgs e)
+        {
+            grpGeneralControls.Enabled = true;
+            grpConnectionSettings.Enabled = false;
+            CleanupGroupbox(grpConnectionSettings);
+        }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            if (chkWindowsAuthentication.Checked)
+            {
+
+            }
+            else
+            { 
+
+            }
+
+            grpFileAndOutputSettings.Enabled = false;
+            grpConnectionSettings.Enabled = false;
+            CleanupGroupbox(grpConnectionSettings);
+        }
+
+        private void btnSaveNewServer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchFile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
