@@ -1,0 +1,6 @@
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\bin\Debug\Inserter.Logic.dll
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\bin\Debug\Inserter.Logic.pdb
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\obj\Debug\Inserter.Logic.csprojAssemblyReference.cache
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\obj\Debug\Inserter.Logic.csproj.CoreCompileInputs.cache
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\obj\Debug\Inserter.Logic.dll
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.Logic\obj\Debug\Inserter.Logic.pdb
