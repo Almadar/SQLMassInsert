@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbConnectionSettings = new System.Windows.Forms.GroupBox();
+            this.grpConnectionSettings = new System.Windows.Forms.GroupBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.chkWindowsAuthentication = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.cboDatabase = new System.Windows.Forms.ComboBox();
@@ -39,52 +41,69 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grpFileAndOutputSettings = new System.Windows.Forms.GroupBox();
-            this.grpGeneralControls = new System.Windows.Forms.GroupBox();
-            this.chkWindowsAuthentication = new System.Windows.Forms.CheckBox();
-            this.btnConnect = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSourceFilePath = new System.Windows.Forms.TextBox();
-            this.btnSearchFile = new System.Windows.Forms.Button();
-            this.chkSimpleInsert = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtInsertFormat = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cboDestinationTable = new System.Windows.Forms.ComboBox();
-            this.btnInsert = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtNewServerName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNewDatabaseName = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtNewServerAlias = new System.Windows.Forms.TextBox();
-            this.btnSaveNewServer = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cboDestinationDatabase = new System.Windows.Forms.ComboBox();
             this.rtbMessages = new System.Windows.Forms.RichTextBox();
-            this.grbConnectionSettings.SuspendLayout();
+            this.cboDestinationDatabase = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.cboDestinationTable = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtInsertFormat = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.chkSimpleInsert = new System.Windows.Forms.CheckBox();
+            this.btnSearchFile = new System.Windows.Forms.Button();
+            this.txtSourceFilePath = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.grpGeneralControls = new System.Windows.Forms.GroupBox();
+            this.btnSaveNewServer = new System.Windows.Forms.Button();
+            this.txtNewServerAlias = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtNewDatabaseName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNewServerName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.grpConnectionSettings.SuspendLayout();
             this.grpFileAndOutputSettings.SuspendLayout();
             this.grpGeneralControls.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbConnectionSettings
+            // grpConnectionSettings
             // 
-            this.grbConnectionSettings.Controls.Add(this.btnConnect);
-            this.grbConnectionSettings.Controls.Add(this.chkWindowsAuthentication);
-            this.grbConnectionSettings.Controls.Add(this.txtPassword);
-            this.grbConnectionSettings.Controls.Add(this.txtUser);
-            this.grbConnectionSettings.Controls.Add(this.cboDatabase);
-            this.grbConnectionSettings.Controls.Add(this.btnNewServer);
-            this.grbConnectionSettings.Controls.Add(this.cboServer);
-            this.grbConnectionSettings.Controls.Add(this.label4);
-            this.grbConnectionSettings.Controls.Add(this.label3);
-            this.grbConnectionSettings.Controls.Add(this.label2);
-            this.grbConnectionSettings.Controls.Add(this.label1);
-            this.grbConnectionSettings.Location = new System.Drawing.Point(12, 12);
-            this.grbConnectionSettings.Name = "grbConnectionSettings";
-            this.grbConnectionSettings.Size = new System.Drawing.Size(342, 188);
-            this.grbConnectionSettings.TabIndex = 0;
-            this.grbConnectionSettings.TabStop = false;
-            this.grbConnectionSettings.Text = "Connection Settings";
+            this.grpConnectionSettings.Controls.Add(this.btnConnect);
+            this.grpConnectionSettings.Controls.Add(this.chkWindowsAuthentication);
+            this.grpConnectionSettings.Controls.Add(this.txtPassword);
+            this.grpConnectionSettings.Controls.Add(this.txtUser);
+            this.grpConnectionSettings.Controls.Add(this.cboDatabase);
+            this.grpConnectionSettings.Controls.Add(this.btnNewServer);
+            this.grpConnectionSettings.Controls.Add(this.cboServer);
+            this.grpConnectionSettings.Controls.Add(this.label4);
+            this.grpConnectionSettings.Controls.Add(this.label3);
+            this.grpConnectionSettings.Controls.Add(this.label2);
+            this.grpConnectionSettings.Controls.Add(this.label1);
+            this.grpConnectionSettings.Location = new System.Drawing.Point(12, 12);
+            this.grpConnectionSettings.Name = "grpConnectionSettings";
+            this.grpConnectionSettings.Size = new System.Drawing.Size(342, 188);
+            this.grpConnectionSettings.TabIndex = 0;
+            this.grpConnectionSettings.TabStop = false;
+            this.grpConnectionSettings.Text = "Connection Settings";
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(6, 155);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(330, 23);
+            this.btnConnect.TabIndex = 10;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            // 
+            // chkWindowsAuthentication
+            // 
+            this.chkWindowsAuthentication.AutoSize = true;
+            this.chkWindowsAuthentication.Location = new System.Drawing.Point(74, 132);
+            this.chkWindowsAuthentication.Name = "chkWindowsAuthentication";
+            this.chkWindowsAuthentication.Size = new System.Drawing.Size(163, 17);
+            this.chkWindowsAuthentication.TabIndex = 9;
+            this.chkWindowsAuthentication.Text = "Use Windows Authentication";
+            this.chkWindowsAuthentication.UseVisualStyleBackColor = true;
             // 
             // txtPassword
             // 
@@ -184,6 +203,110 @@
             this.grpFileAndOutputSettings.TabStop = false;
             this.grpFileAndOutputSettings.Text = "File and Output Settings";
             // 
+            // rtbMessages
+            // 
+            this.rtbMessages.Location = new System.Drawing.Point(6, 244);
+            this.rtbMessages.Name = "rtbMessages";
+            this.rtbMessages.Size = new System.Drawing.Size(405, 81);
+            this.rtbMessages.TabIndex = 11;
+            this.rtbMessages.Text = "";
+            // 
+            // cboDestinationDatabase
+            // 
+            this.cboDestinationDatabase.FormattingEnabled = true;
+            this.cboDestinationDatabase.Location = new System.Drawing.Point(73, 155);
+            this.cboDestinationDatabase.Name = "cboDestinationDatabase";
+            this.cboDestinationDatabase.Size = new System.Drawing.Size(257, 21);
+            this.cboDestinationDatabase.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(14, 158);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 13);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "Database";
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(6, 215);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(405, 23);
+            this.btnInsert.TabIndex = 8;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            // 
+            // cboDestinationTable
+            // 
+            this.cboDestinationTable.FormattingEnabled = true;
+            this.cboDestinationTable.Location = new System.Drawing.Point(73, 182);
+            this.cboDestinationTable.Name = "cboDestinationTable";
+            this.cboDestinationTable.Size = new System.Drawing.Size(257, 21);
+            this.cboDestinationTable.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(33, 185);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Table";
+            // 
+            // txtInsertFormat
+            // 
+            this.txtInsertFormat.Location = new System.Drawing.Point(73, 80);
+            this.txtInsertFormat.Multiline = true;
+            this.txtInsertFormat.Name = "txtInsertFormat";
+            this.txtInsertFormat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtInsertFormat.Size = new System.Drawing.Size(257, 69);
+            this.txtInsertFormat.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(28, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Format";
+            // 
+            // chkSimpleInsert
+            // 
+            this.chkSimpleInsert.AutoSize = true;
+            this.chkSimpleInsert.Location = new System.Drawing.Point(73, 55);
+            this.chkSimpleInsert.Name = "chkSimpleInsert";
+            this.chkSimpleInsert.Size = new System.Drawing.Size(108, 17);
+            this.chkSimpleInsert.TabIndex = 3;
+            this.chkSimpleInsert.Text = "Use Simple Insert";
+            this.chkSimpleInsert.UseVisualStyleBackColor = true;
+            // 
+            // btnSearchFile
+            // 
+            this.btnSearchFile.Location = new System.Drawing.Point(336, 24);
+            this.btnSearchFile.Name = "btnSearchFile";
+            this.btnSearchFile.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchFile.TabIndex = 2;
+            this.btnSearchFile.Text = "Search...";
+            this.btnSearchFile.UseVisualStyleBackColor = true;
+            // 
+            // txtSourceFilePath
+            // 
+            this.txtSourceFilePath.Location = new System.Drawing.Point(73, 26);
+            this.txtSourceFilePath.Name = "txtSourceFilePath";
+            this.txtSourceFilePath.Size = new System.Drawing.Size(257, 20);
+            this.txtSourceFilePath.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "File Path";
+            // 
             // grpGeneralControls
             // 
             this.grpGeneralControls.Controls.Add(this.btnSaveNewServer);
@@ -200,135 +323,21 @@
             this.grpGeneralControls.TabStop = false;
             this.grpGeneralControls.Text = "General Controls";
             // 
-            // chkWindowsAuthentication
+            // btnSaveNewServer
             // 
-            this.chkWindowsAuthentication.AutoSize = true;
-            this.chkWindowsAuthentication.Location = new System.Drawing.Point(74, 132);
-            this.chkWindowsAuthentication.Name = "chkWindowsAuthentication";
-            this.chkWindowsAuthentication.Size = new System.Drawing.Size(163, 17);
-            this.chkWindowsAuthentication.TabIndex = 9;
-            this.chkWindowsAuthentication.Text = "Use Windows Authentication";
-            this.chkWindowsAuthentication.UseVisualStyleBackColor = true;
+            this.btnSaveNewServer.Location = new System.Drawing.Point(6, 108);
+            this.btnSaveNewServer.Name = "btnSaveNewServer";
+            this.btnSaveNewServer.Size = new System.Drawing.Size(330, 23);
+            this.btnSaveNewServer.TabIndex = 6;
+            this.btnSaveNewServer.Text = "Save";
+            this.btnSaveNewServer.UseVisualStyleBackColor = true;
             // 
-            // btnConnect
+            // txtNewServerAlias
             // 
-            this.btnConnect.Location = new System.Drawing.Point(6, 155);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(330, 23);
-            this.btnConnect.TabIndex = 10;
-            this.btnConnect.Text = "Connect";
-            this.btnConnect.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "File Path";
-            // 
-            // txtSourceFilePath
-            // 
-            this.txtSourceFilePath.Location = new System.Drawing.Point(73, 26);
-            this.txtSourceFilePath.Name = "txtSourceFilePath";
-            this.txtSourceFilePath.Size = new System.Drawing.Size(257, 20);
-            this.txtSourceFilePath.TabIndex = 1;
-            // 
-            // btnSearchFile
-            // 
-            this.btnSearchFile.Location = new System.Drawing.Point(336, 24);
-            this.btnSearchFile.Name = "btnSearchFile";
-            this.btnSearchFile.Size = new System.Drawing.Size(75, 23);
-            this.btnSearchFile.TabIndex = 2;
-            this.btnSearchFile.Text = "Search...";
-            this.btnSearchFile.UseVisualStyleBackColor = true;
-            // 
-            // chkSimpleInsert
-            // 
-            this.chkSimpleInsert.AutoSize = true;
-            this.chkSimpleInsert.Location = new System.Drawing.Point(73, 55);
-            this.chkSimpleInsert.Name = "chkSimpleInsert";
-            this.chkSimpleInsert.Size = new System.Drawing.Size(108, 17);
-            this.chkSimpleInsert.TabIndex = 3;
-            this.chkSimpleInsert.Text = "Use Simple Insert";
-            this.chkSimpleInsert.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 87);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Format";
-            // 
-            // txtInsertFormat
-            // 
-            this.txtInsertFormat.Location = new System.Drawing.Point(73, 80);
-            this.txtInsertFormat.Multiline = true;
-            this.txtInsertFormat.Name = "txtInsertFormat";
-            this.txtInsertFormat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtInsertFormat.Size = new System.Drawing.Size(257, 69);
-            this.txtInsertFormat.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 185);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Table";
-            // 
-            // cboDestinationTable
-            // 
-            this.cboDestinationTable.FormattingEnabled = true;
-            this.cboDestinationTable.Location = new System.Drawing.Point(73, 182);
-            this.cboDestinationTable.Name = "cboDestinationTable";
-            this.cboDestinationTable.Size = new System.Drawing.Size(257, 21);
-            this.cboDestinationTable.TabIndex = 7;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.Location = new System.Drawing.Point(6, 215);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(405, 23);
-            this.btnInsert.TabIndex = 8;
-            this.btnInsert.Text = "Insert";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Server Name";
-            // 
-            // txtNewServerName
-            // 
-            this.txtNewServerName.Location = new System.Drawing.Point(81, 28);
-            this.txtNewServerName.Name = "txtNewServerName";
-            this.txtNewServerName.Size = new System.Drawing.Size(255, 20);
-            this.txtNewServerName.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Database";
-            // 
-            // txtNewDatabaseName
-            // 
-            this.txtNewDatabaseName.Location = new System.Drawing.Point(81, 54);
-            this.txtNewDatabaseName.Name = "txtNewDatabaseName";
-            this.txtNewDatabaseName.Size = new System.Drawing.Size(255, 20);
-            this.txtNewDatabaseName.TabIndex = 3;
+            this.txtNewServerAlias.Location = new System.Drawing.Point(81, 80);
+            this.txtNewServerAlias.Name = "txtNewServerAlias";
+            this.txtNewServerAlias.Size = new System.Drawing.Size(255, 20);
+            this.txtNewServerAlias.TabIndex = 5;
             // 
             // label10
             // 
@@ -339,46 +348,37 @@
             this.label10.TabIndex = 4;
             this.label10.Text = "Alias";
             // 
-            // txtNewServerAlias
+            // txtNewDatabaseName
             // 
-            this.txtNewServerAlias.Location = new System.Drawing.Point(81, 80);
-            this.txtNewServerAlias.Name = "txtNewServerAlias";
-            this.txtNewServerAlias.Size = new System.Drawing.Size(255, 20);
-            this.txtNewServerAlias.TabIndex = 5;
+            this.txtNewDatabaseName.Location = new System.Drawing.Point(81, 54);
+            this.txtNewDatabaseName.Name = "txtNewDatabaseName";
+            this.txtNewDatabaseName.Size = new System.Drawing.Size(255, 20);
+            this.txtNewDatabaseName.TabIndex = 3;
             // 
-            // btnSaveNewServer
+            // label9
             // 
-            this.btnSaveNewServer.Location = new System.Drawing.Point(6, 108);
-            this.btnSaveNewServer.Name = "btnSaveNewServer";
-            this.btnSaveNewServer.Size = new System.Drawing.Size(330, 23);
-            this.btnSaveNewServer.TabIndex = 6;
-            this.btnSaveNewServer.Text = "Save";
-            this.btnSaveNewServer.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Database";
             // 
-            // label11
+            // txtNewServerName
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 165);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Database";
+            this.txtNewServerName.Location = new System.Drawing.Point(81, 28);
+            this.txtNewServerName.Name = "txtNewServerName";
+            this.txtNewServerName.Size = new System.Drawing.Size(255, 20);
+            this.txtNewServerName.TabIndex = 1;
             // 
-            // cboDestinationDatabase
+            // label8
             // 
-            this.cboDestinationDatabase.FormattingEnabled = true;
-            this.cboDestinationDatabase.Location = new System.Drawing.Point(73, 155);
-            this.cboDestinationDatabase.Name = "cboDestinationDatabase";
-            this.cboDestinationDatabase.Size = new System.Drawing.Size(257, 21);
-            this.cboDestinationDatabase.TabIndex = 10;
-            // 
-            // rtbMessages
-            // 
-            this.rtbMessages.Location = new System.Drawing.Point(6, 244);
-            this.rtbMessages.Name = "rtbMessages";
-            this.rtbMessages.Size = new System.Drawing.Size(405, 81);
-            this.rtbMessages.TabIndex = 11;
-            this.rtbMessages.Text = "";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Server Name";
             // 
             // frmMain
             // 
@@ -387,12 +387,12 @@
             this.ClientSize = new System.Drawing.Size(789, 356);
             this.Controls.Add(this.grpGeneralControls);
             this.Controls.Add(this.grpFileAndOutputSettings);
-            this.Controls.Add(this.grbConnectionSettings);
+            this.Controls.Add(this.grpConnectionSettings);
             this.Name = "frmMain";
             this.Text = "Inserter";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.grbConnectionSettings.ResumeLayout(false);
-            this.grbConnectionSettings.PerformLayout();
+            this.grpConnectionSettings.ResumeLayout(false);
+            this.grpConnectionSettings.PerformLayout();
             this.grpFileAndOutputSettings.ResumeLayout(false);
             this.grpFileAndOutputSettings.PerformLayout();
             this.grpGeneralControls.ResumeLayout(false);
@@ -403,7 +403,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbConnectionSettings;
+        private System.Windows.Forms.GroupBox grpConnectionSettings;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.ComboBox cboDatabase;

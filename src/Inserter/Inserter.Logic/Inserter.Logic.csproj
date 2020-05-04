@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Database\DatabaseObjectExplorer.cs" />
-    <Compile Include="File\FileHandler.cs" />
+    <Compile Include="Files\FileHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

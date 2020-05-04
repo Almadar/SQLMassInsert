@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inserter.Logic\Inserter.Logic.csproj">
+      <Project>{c411e827-5479-4cc3-a968-e99fac6480bb}</Project>
+      <Name>Inserter.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,3 +8,6 @@ Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\obj\Debug\Inserter
 Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\obj\Debug\Inserter.UI.WinForms.csproj.CoreCompileInputs.cache
 Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\obj\Debug\Inserter.UI.WinForms.exe
 Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\obj\Debug\Inserter.UI.WinForms.pdb
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\bin\Debug\Inserter.Logic.dll
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\bin\Debug\Inserter.Logic.pdb
+Y:\Emmanuel\GitHub\Inserter\src\Inserter\Inserter.UI.WinForms\obj\Debug\Inserter.UI.WinForms.csproj.CopyComplete
