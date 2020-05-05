@@ -44,6 +44,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Database\DatabaseObjectExplorer.cs" />
     <Compile Include="Files\ConfigFileHandler.cs" />
+    <Compile Include="Models\ConnectionInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
